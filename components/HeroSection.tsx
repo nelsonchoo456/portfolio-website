@@ -24,7 +24,7 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl text-neutral-600 dark:text-neutral-400">
             I enjoy building software and solving critical problems using data.
           </p>
-          <Link
+          {/* <Link
             to="projects"
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer"
             activeClass="active"
@@ -34,7 +34,7 @@ const HeroSection = () => {
             duration={500}
           >
             Resume
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">

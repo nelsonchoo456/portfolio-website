@@ -17,25 +17,25 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <div className="text-lg leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-              <p>
+              {/* <p>
                 Hi, my name is Nelson and I am a{" "}
                 <span className="font-bold">{"highly ambitious"}</span>,
                 <span className="font-bold">{" self-motivated"}</span>, and
                 <span className="font-bold">{" driven"}</span> software engineer
                 based in Los Angeles, CA.
               </p>
-              <br />
+              <br /> */}
               <p>
                 I am a penultimate year student at the National University of
                 Singapore pursuing a Bachelor&#39;s in Computing in Information
-                Systems pursuing a specialisation in Financial Technology.
+                Systems, pursuing a specialisation in Financial Technology.
               </p>
               <br />
               <p>
-                I have a wide range of hobbies and passions that keep me busy.
-                From reading, playing sports, traveling, to making YouTube
-                videos, I am always seeking new experiences and love to keep
-                myself engaged and learning new things.
+                I enjoy building software with new technologies and solving
+                different problems. I am also interested in big data engineering
+                and analytics, using machine learning to derive insights and
+                address business needs.
               </p>
               <br />
               <p>
