@@ -1,19 +1,6 @@
-import React from "react"
-import Image from "next/image"
-
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Python" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
-]
+import React from "react";
+import Image from "next/image";
+import { languages, frameworks, developer } from "./skills";
 
 const AboutSection = () => {
   return (
@@ -25,68 +12,105 @@ const AboutSection = () => {
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2 text-lg">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me!
             </h1>
-            <p>
-              Hi, my name is Hosna and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
-            </p>
-            <br />
-            <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
-            </p>
-            <br />
-            <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
-            </p>
-            <br />
-            <p>
-              I believe that you should{" "}
-              <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
-            </p>
+            <div className="text-lg leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+              <p>
+                Hi, my name is Nelson and I am a{" "}
+                <span className="font-bold">{"highly ambitious"}</span>,
+                <span className="font-bold">{" self-motivated"}</span>, and
+                <span className="font-bold">{" driven"}</span> software engineer
+                based in Los Angeles, CA.
+              </p>
+              <br />
+              <p>
+                I am a penultimate year student at the National University of
+                Singapore pursuing a Bachelor&#39;s in Computing in Information
+                Systems pursuing a specialisation in Financial Technology.
+              </p>
+              <br />
+              <p>
+                I have a wide range of hobbies and passions that keep me busy.
+                From reading, playing sports, traveling, to making YouTube
+                videos, I am always seeking new experiences and love to keep
+                myself engaged and learning new things.
+              </p>
+              <br />
+              <p>
+                I believe that you should{" "}
+                <span className="font-bold text-teal-500">
+                  never stop growing
+                </span>{" "}
+                and that&#39;s what I strive to do, I have a passion for
+                technology and a desire to always push the limits of what is
+                possible. I am excited to see where my career takes me and am
+                always open to new opportunities. 🙂
+              </p>
+            </div>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
-            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-              {skills.map((item, idx) => {
+            <h1 className="text-xl font-semibold leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+              Languages
+            </h1>
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start gap-6">
+              {languages.map((item, idx) => {
                 return (
-                  <p
+                  <div
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    className="flex-item flex flex-col justify-center items-center mb-2 group text-gray-400 hover:text-gray-500 relative"
                   >
-                    {item.skill}
-                  </p>
-                )
+                    {item.svg}
+                    <span className="absolute -bottom-7 text-xs opacity-0 group-hover:opacity-100 duration-300 whitespace-nowrap  p-2 rounded">
+                      {item.skill}
+                    </span>
+                  </div>
+                );
               })}
             </div>
-            <Image
-              src="/hero-image.png"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            />
+            <h1 className="text-xl font-semibold leading-7 my-4 text-neutral-600 dark:text-neutral-400">
+              Frameworks
+            </h1>
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start gap-6">
+              {frameworks.map((item, idx) => {
+                return (
+                  <div
+                    key={idx}
+                    className="flex-item flex flex-col justify-center items-center mb-2 group text-gray-400 hover:text-gray-500 relative"
+                  >
+                    {item.svg}
+                    <span className="absolute -bottom-7 text-xs opacity-0 group-hover:opacity-100 duration-300 whitespace-nowrap  p-2 rounded">
+                      {item.skill}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            <h1 className="text-xl font-semibold leading-7 my-4 text-neutral-600 dark:text-neutral-400">
+              Developer Tools
+            </h1>
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start gap-6">
+              {developer.map((item, idx) => {
+                return (
+                  <div
+                    key={idx}
+                    className="flex-item flex flex-col justify-center items-center mb-2 group text-gray-400 hover:text-gray-500 relative"
+                  >
+                    {item.svg}
+                    <span className="absolute -bottom-7 text-xs opacity-0 group-hover:opacity-100 duration-300 whitespace-nowrap  p-2 rounded">
+                      {item.skill}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
