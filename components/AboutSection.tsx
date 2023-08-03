@@ -27,8 +27,8 @@ const AboutSection = () => {
               <br /> */}
               <p>
                 I am a penultimate year student at the National University of
-                Singapore pursuing a Bachelor&#39;s in Computing in Information
-                Systems, pursuing a specialisation in Financial Technology.
+                Singapore pursuing a Bachelor&#39;s of Computing in Information
+                Systems, with a specialisation in Financial Technology.
               </p>
               <br />
               <p>
